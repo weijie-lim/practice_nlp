@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify, render_template
-#from flask_cors import cross_origin
+from flask_cors import cross_origin
+#import sys
 #import ktrain
 
 app = Flask(__name__)
@@ -7,15 +8,19 @@ app = Flask(__name__)
 
 
 @app.route("/")
-#@cross_origin()
+@cross_origin()
 def home():
     return render_template("index.html")
 
 
-@app.route("/predict", methods=["GET", "POST"])
-#@cross_origin()
+@app.route("/prediction/", methods=["POST"])
+@cross_origin()
 def predict():
-    pass
+    para = None
+    if request.method == "POST":
+        para = request.json['data']
+    #print('Hello world!', file=sys.stderr)
+    # return render_template("index.html")
 
 
 if __name__ == '__main__':
