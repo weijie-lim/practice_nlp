@@ -40,24 +40,24 @@ h3{
 .message-box{
   width: 100%;
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .message-box i{
   position: absolute;
   top: 50%;
-  left: 30px;
+  left: 10px;
   transform: translateY(-50%);
   font-size: 20px;
   color: #bbb;
 }
 .message-box textarea{
   width: 100%;
-  padding: 20px 60px;
+  padding: 10px 20px;
   border: none;
   outline: none;
   font-size: 18px;
   background-color: #eee;
-  border-radius: 40px;
+  border-radius: 20px;
 }
 .message-box textarea::placeholder{
   color: #bbb;
@@ -74,16 +74,16 @@ h3{
   padding: 10px;
   font-size: 20px;
   color: #fff;
-  background-color: #806bcd;
+  background-color: black;
   border: none;
   outline: none;
-  border-radius: 40px;
+  border-radius: 10px;
   cursor: pointer;
 }
 .message{
   width: 100%;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: center;
 }
