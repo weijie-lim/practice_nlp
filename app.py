@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify, render_template
 from flask_cors import cross_origin
-#import sys
-#import ktrain
+import sys
+import ktrain
 
 app = Flask(__name__)
 #model = ktrain.load_predictor('distilbert')
@@ -24,4 +24,4 @@ def predict():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True,host='0.0.0.1' , port=5000)
