@@ -7,7 +7,7 @@
 
 .bg {
   background-image: url("/static/bg.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
 }
@@ -83,7 +83,7 @@ h3{
 .message{
   width: 100%;
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
 }
@@ -92,5 +92,4 @@ h3{
   color: black;
   position: absolute;
   animation: buttons .3s linear;
-  display: none;
 }
