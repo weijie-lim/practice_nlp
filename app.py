@@ -2,8 +2,12 @@ from flask import Flask, request, jsonify, render_template
 from flask_cors import cross_origin
 import ktrain
 import json
+import os
+
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
 app = Flask(__name__)
+model = ktrain.load_predictor('distilbert')
 
 @app.route("/")
 @cross_origin()
@@ -15,7 +19,7 @@ def home():
 @cross_origin()
 def predict():
     try:
-        model = ktrain.load_predictor('distilbert')
+        
         para = None
         if request.method == 'POST':
             para = request.form['data']
