@@ -88,7 +88,7 @@ h3{
   justify-content: center;
 }
 .message .success{
-  font-size: 20px;
+  font-size: 15px;
   color: black;
   position: absolute;
   animation: buttons .3s linear;
