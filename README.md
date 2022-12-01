@@ -49,13 +49,22 @@ Example of a waiver example shows good testing results: Taken from https://legal
 
 The waiver example performs well possibly due to the fact that the initial training sample size is large enough such that oversampling does not affect the overfitting of the model by too much. Let us look at the smallest training sample given: "Trading activities"
 
+<h4> Amendments Examples </h4>
+I attempt to classify a sample amendments clause with the following results. The results seem good as it is able to rightfully pick out with a high degree of accuracy.
+
+Refer to: https://www.lawinsider.com/clause/amendment
+
+<img width="1052" alt="image" src="https://user-images.githubusercontent.com/47061871/205096724-b5bf91b0-3c8b-4bfe-a02d-87ff307b2e62.png">
+
+<img width="973" alt="image" src="https://user-images.githubusercontent.com/47061871/205096983-28f631e0-282e-4732-a9d6-e68a80fc67d2.png">
+
+
 <h4> Trading Activities Example </h4>
 Example of Trading Activities clause that shows poor results: Taken from https://www.lawinsider.com/contracts/9JZAFsYwduH#securities-trading-activities
 
 <img width="1099" alt="image" src="https://user-images.githubusercontent.com/47061871/205058046-4d4fa664-7dae-4326-bfb0-8143f016d42e.png">
 
 <img width="1092" alt="image" src="https://user-images.githubusercontent.com/47061871/205058127-0cf37670-5673-4901-83f3-8cc7ed12a53a.png">
-
 
 <h2> Possible Improvements to the Model </h2>
 The model is able to perform well on the categories with larger sample size but overfits on the smaller categories as apparent in the results above. It is unable to properly classify the unseen data of smaller categories as a result. 
