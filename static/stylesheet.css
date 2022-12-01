@@ -9,7 +9,7 @@
   background-image: url("/static/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 200vh;
 }
 
 .container{
@@ -92,4 +92,37 @@ h3{
   color: black;
   position: absolute;
   animation: buttons .3s linear;
+}
+
+table {
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+  border-collapse: collapse;
+  border-radius: 20px;
+  width: 400px;
+  height: 500px;
+}
+
+tr {
+  transition: all .2s ease-in;
+  cursor: pointer;
+}
+
+th, td{
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#header {
+  background-color: #16a085;
+  color: #fff;
+}
+
+tr:hover{
+  background-color: #f5f5f5;
+  transform: scale(1.02);
 }
