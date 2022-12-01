@@ -38,7 +38,7 @@ def predict():
             # return json.dumps(result)
             
             #use if memory exceeded
-            return json.dumps({"prediction" : "Distilbert Model too large, test locally"})
+            return json.dumps({"prediction" : "Distilbert Model too large, please clone github repo to test locally"})
     except:
         return('Error 500: Service is currently down. We are currently looking into it!', 400)
 
