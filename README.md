@@ -54,8 +54,9 @@ Example of Trading Activities clause that shows poor results: Taken from https:/
 <h2> Possible Improvements to the Model </h2>
 The model is able to perform well on the categories with larger sample size but overfits on the smaller categories as apparent in the results above. It is unable to properly classify the unseen data of smaller categories as a result. 
 
+
 Further Experiments if time and GPU units are available:
-Improvement 1: Easiest way would be to get actual real life data such that the model is able to capture the differences.
-Improvement 2: Take the catgeory with a median amount of samples. Downsample the categories with a higher sample size than it and oversample the categories with a lower sample size. This would evenly spread out the data set to become more balanced.
-Improve 3: Utilise other techniques in upsampling the categories which are smaller in sample sizes i.e. contextual sentence generators, word generators, etc.
+- Improvement 1: Easiest way would be to get actual real life data such that the model is able to capture the differences.
+- Improvement 2: Take the catgeory with a median amount of samples. Downsample the categories with a higher sample size than it and oversample the categories with a lower sample size. This would evenly spread out the data set to become more balanced.
+- Improve 3: Utilise other techniques in upsampling the categories which are smaller in sample sizes i.e. contextual sentence generators, word generators, etc.
 
