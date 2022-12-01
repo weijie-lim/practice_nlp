@@ -3,6 +3,9 @@
 <h2>Goal of the Project: </h2> 
 Attempts to classify sections of legal texts to find out which label should it fall under.
 
+<h2>Model Chosen</h2> 
+Distilbert -- using 1 cycle policy
+
 <h2>Categories:</h2>
 There are 10 labels in total: ['amendments', 'counterparts', 'governing laws', 'government regulations', 'terminations', 'trade relations', 'trading activities', 'valid issuances', 'waivers', 'warranties']
 
@@ -25,10 +28,10 @@ As the heroku cloud deployment is unable to take the 240mb worth of pretrained m
 
 We can see that the following have very little actual data as compared to the rest. Thus, I have chosen to use oversampling with replacement whilst applying substitution to words in each sample using synonyms. These substitutions are carried out at a fixed rate per number of 1N tokens in a sample.
 
-valid issuances             90
-government regulations      89
-trade relations             37
-trading activities          27
+- valid issuances             90
+- government regulations      89
+- trade relations             37
+- trading activities          27
 
 
 <h2> Examples of results run on local server </h2>
