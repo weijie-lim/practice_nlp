@@ -2,9 +2,9 @@ from flask import Flask, request, jsonify, render_template
 from flask_cors import cross_origin
 import ktrain
 import json
-import os
+# import os
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+# os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
 app = Flask(__name__)
 model = ktrain.load_predictor('distilbert')
