@@ -6,8 +6,8 @@ Attempts to classify sections of legal texts to find out which label should it f
 <h2>Model Chosen</h2> 
 Distilbert -- using 1 cycle policy
 
-<h3> Heroku App Link for Sample of how the App should work (if model size / memory can be handled / does not explode) </h3>
-https://limweijie-nlp-legal-classifier.herokuapp.com/ 
+<h2> Heroku App Link for Sample of how the App should work (if model size / memory can be handled / does not explode) </h2>
+Click on Link: https://limweijie-nlp-legal-classifier.herokuapp.com/ 
 
 <h2>Categories:</h2>
 There are 10 labels in total: ['amendments', 'counterparts', 'governing laws', 'government regulations', 'terminations', 'trade relations', 'trading activities', 'valid issuances', 'waivers', 'warranties']
