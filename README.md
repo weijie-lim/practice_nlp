@@ -28,9 +28,11 @@ As the heroku cloud deployment is unable to take the 240mb worth of pretrained m
 
 <h2> Data Shape </h2>
 Original Data Size: 
+
 <img width="304" alt="image" src="https://user-images.githubusercontent.com/47061871/205100265-912989fd-0c0f-4db9-9b6d-97e41499a8ce.png">
 
 Training Data Size: (70% of each category taken into the training)
+
 <img width="405" alt="image" src="https://user-images.githubusercontent.com/47061871/205058312-ba70d9b0-f52a-4d1c-b14c-6f8e118f8bcc.png">
 
 We can see that the following have very little actual data as compared to the rest. Thus, I have chosen to use oversampling with replacement whilst applying substitution to words in each sample using synonyms. These substitutions are carried out at a fixed rate per number of 1N tokens in a sample.
